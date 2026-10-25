@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Задание 7: Галерея-слайдер</title>
+  <link rel="stylesheet" href="slick.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="jquery-3.4.1.min.js"></script>
+  <script src="slick.min.js"></script>
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <header id="site-header">
+    <div class="header-inner">
+      <div id="header-brand">
+        <img id="logo" src="fernando.png" alt="Логотип" width="48" height="48">
+        <h1 id="site-title">Задание 7</h1>
+      </div>
+    </div>
+  </header>
+
+  <main id="content">
+    <div class="wrapper">
+      <section class="card">
+        <h2>Галерея изображений</h2>
+
+        <div class="slider-wrapper">
+          <button type="button" id="btn-prev" class="slider-arrow arrow-prev" aria-label="Предыдущие слайды">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+          </button>
+
+          <div class="gallery-slider">
+            <div class="slide-item">
+              <img src="images/image1.jpg" alt="Изображение 1" width="800" height="500">
+            </div>
+            <div class="slide-item">
+              <img src="images/image2.jpg" alt="Изображение 2" width="800" height="500">
+            </div>
+            <div class="slide-item">
+              <img src="images/image3.jpg" alt="Изображение 3" width="800" height="500">
+            </div>
+            <div class="slide-item">
+              <img src="images/image4.jpg" alt="Изображение 4" width="800" height="500">
+            </div>
+            <div class="slide-item">
+              <img src="images/image5.jpg" alt="Изображение 5" width="800" height="500">
+            </div>
+            <div class="slide-item">
+              <img src="images/image6.jpg" alt="Изображение 6" width="800" height="500">
+            </div>
+            <div class="slide-item">
+              <img src="images/image7.jpg" alt="Изображение 7" width="800" height="500">
+            </div>
+            <div class="slide-item">
+              <img src="images/image8.jpg" alt="Изображение 8" width="800" height="500">
+            </div>
+          </div>
+
+          <button type="button" id="btn-next" class="slider-arrow arrow-next" aria-label="Следующие слайды">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </button>
+        </div>
+
+        <div class="pager-container">
+          <div id="pager-info" class="pager-badge">Страница 1 из 3</div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer id="site-footer">
+    <div class="wrapper">
+      <p>© Мирзоев Вадим</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>
